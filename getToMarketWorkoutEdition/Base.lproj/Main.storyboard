@@ -24,15 +24,20 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIs-vT-x8B">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5XF-Ex-9q4">
-                                                        <rect key="frame" x="24" y="77" width="390" height="7"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XF-Ex-9q4">
+                                                        <rect key="frame" x="20" y="77" width="394" height="4"/>
+                                                        <color key="backgroundColor" red="0.93725490196078431" green="0.96470588235294119" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="4" id="RkG-Vs-AQ2"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
+                                                    <constraint firstItem="5XF-Ex-9q4" firstAttribute="leading" secondItem="UIs-vT-x8B" secondAttribute="leading" constant="20" id="ATw-Cm-liO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5XF-Ex-9q4" secondAttribute="bottom" constant="3" id="lja-aL-pHY"/>
                                                     <constraint firstAttribute="height" constant="84" id="nih-s5-kMj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="5XF-Ex-9q4" secondAttribute="trailing" id="zlW-5b-kf3"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-1w-Zc4">

@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		245015CC24429626005C89B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245015CB24429626005C89B6 /* AppDelegate.swift */; };
 		245015CE24429626005C89B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245015CD24429626005C89B6 /* SceneDelegate.swift */; };
-		245015D024429626005C89B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245015CF24429626005C89B6 /* ViewController.swift */; };
+		245015D024429626005C89B6 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245015CF24429626005C89B6 /* HomePageViewController.swift */; };
 		245015D324429626005C89B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245015D124429626005C89B6 /* Main.storyboard */; };
 		245015D52442962A005C89B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 245015D42442962A005C89B6 /* Assets.xcassets */; };
 		245015D82442962A005C89B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245015D62442962A005C89B6 /* LaunchScreen.storyboard */; };
+		CAB6E68C2B7D0B333F8E1297 /* Pods_getToMarketWorkoutEdition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C08CBC7C44646A5F02B57A /* Pods_getToMarketWorkoutEdition.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		245015C824429626005C89B6 /* getToMarketWorkoutEdition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getToMarketWorkoutEdition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		245015CB24429626005C89B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		245015CD24429626005C89B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		245015CF24429626005C89B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		245015CF24429626005C89B6 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		245015D224429626005C89B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		245015D42442962A005C89B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		245015D72442962A005C89B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		245015D92442962A005C89B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8476E660C840E956A80F5649 /* Pods-getToMarketWorkoutEdition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getToMarketWorkoutEdition.release.xcconfig"; path = "Target Support Files/Pods-getToMarketWorkoutEdition/Pods-getToMarketWorkoutEdition.release.xcconfig"; sourceTree = "<group>"; };
+		B69E6E30E29B9849A9A7BF7C /* Pods-getToMarketWorkoutEdition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-getToMarketWorkoutEdition.debug.xcconfig"; path = "Target Support Files/Pods-getToMarketWorkoutEdition/Pods-getToMarketWorkoutEdition.debug.xcconfig"; sourceTree = "<group>"; };
+		C7C08CBC7C44646A5F02B57A /* Pods_getToMarketWorkoutEdition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_getToMarketWorkoutEdition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB6E68C2B7D0B333F8E1297 /* Pods_getToMarketWorkoutEdition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C58A50B41473FDD33214637 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B69E6E30E29B9849A9A7BF7C /* Pods-getToMarketWorkoutEdition.debug.xcconfig */,
+				8476E660C840E956A80F5649 /* Pods-getToMarketWorkoutEdition.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		245015BF24429626005C89B6 = {
 			isa = PBXGroup;
 			children = (
 				245015CA24429626005C89B6 /* getToMarketWorkoutEdition */,
 				245015C924429626005C89B6 /* Products */,
+				1C58A50B41473FDD33214637 /* Pods */,
+				A9314F528051E75C2ED732D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +74,21 @@
 			children = (
 				245015CB24429626005C89B6 /* AppDelegate.swift */,
 				245015CD24429626005C89B6 /* SceneDelegate.swift */,
-				245015CF24429626005C89B6 /* ViewController.swift */,
+				245015CF24429626005C89B6 /* HomePageViewController.swift */,
 				245015D124429626005C89B6 /* Main.storyboard */,
 				245015D42442962A005C89B6 /* Assets.xcassets */,
 				245015D62442962A005C89B6 /* LaunchScreen.storyboard */,
 				245015D92442962A005C89B6 /* Info.plist */,
 			);
 			path = getToMarketWorkoutEdition;
+			sourceTree = "<group>";
+		};
+		A9314F528051E75C2ED732D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7C08CBC7C44646A5F02B57A /* Pods_getToMarketWorkoutEdition.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 245015DC2442962A005C89B6 /* Build configuration list for PBXNativeTarget "getToMarketWorkoutEdition" */;
 			buildPhases = (
+				0DB31074C7BCB2A95F7D6209 /* [CP] Check Pods Manifest.lock */,
 				245015C424429626005C89B6 /* Sources */,
 				245015C524429626005C89B6 /* Frameworks */,
 				245015C624429626005C89B6 /* Resources */,
+				C25568C6BFC625CD857FF2DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +159,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DB31074C7BCB2A95F7D6209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-getToMarketWorkoutEdition-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C25568C6BFC625CD857FF2DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-getToMarketWorkoutEdition/Pods-getToMarketWorkoutEdition-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-getToMarketWorkoutEdition/Pods-getToMarketWorkoutEdition-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-getToMarketWorkoutEdition/Pods-getToMarketWorkoutEdition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		245015C424429626005C89B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				245015D024429626005C89B6 /* ViewController.swift in Sources */,
+				245015D024429626005C89B6 /* HomePageViewController.swift in Sources */,
 				245015CC24429626005C89B6 /* AppDelegate.swift in Sources */,
 				245015CE24429626005C89B6 /* SceneDelegate.swift in Sources */,
 			);
@@ -170,6 +238,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +299,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -282,8 +352,10 @@
 		};
 		245015DD2442962A005C89B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B69E6E30E29B9849A9A7BF7C /* Pods-getToMarketWorkoutEdition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = getToMarketWorkoutEdition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,8 +371,10 @@
 		};
 		245015DE2442962A005C89B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8476E660C840E956A80F5649 /* Pods-getToMarketWorkoutEdition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = getToMarketWorkoutEdition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

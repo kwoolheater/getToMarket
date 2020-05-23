@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import LinearProgressBar
 
-class ViewController: UIViewController {
+class HomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
